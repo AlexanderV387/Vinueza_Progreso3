@@ -27,7 +27,7 @@ int main(){
            
             while (nota>10 || nota<0)
             {
-                printf("Solo se puede ingresar un numero de 0 a 10");
+                printf("Solo se puede ingresar un numero de 0 a 10: ");
                 scanf("%f", &nota);
             }
             
