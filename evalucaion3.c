@@ -24,10 +24,17 @@ int main(){
             scanf("%d", &matricula);
             printf("Ingrese la nota del alumno: ");
             scanf("%f", &nota);
+           
+            while (nota>10 || nota<0)
+            {
+                printf("Solo se puede ingresar un numero de 0 a 10");
+                scanf("%f", &nota);
+            }
+            
 
             printf("Nombre: %s\n", nombre);
             printf("Direccion: %s\n", direccion);
-            printf("Nombre: %s\n", materia);
+            printf("Materia: %s\n", materia);
             printf("Matricula: %d\n", matricula);
             printf("Nota: %.2f\n", nota);
         }
